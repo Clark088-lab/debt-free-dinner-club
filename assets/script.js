@@ -24,7 +24,25 @@ document.addEventListener("DOMContentLoaded", () => {
   const yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
+  // Mobile nav toggle (present on every page's header)
+  const navToggle = document.getElementById("navToggle");
+  const siteNav = document.getElementById("siteNav");
+  if (navToggle && siteNav) {
+    navToggle.addEventListener("click", () => {
+      const isOpen = siteNav.classList.toggle("is-open");
+      navToggle.setAttribute("aria-expanded", String(isOpen));
+    });
+    siteNav.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        siteNav.classList.remove("is-open");
+        navToggle.setAttribute("aria-expanded", "false");
+      });
+    });
+  }
+
   const form = document.getElementById("leadForm");
+  if (!form) return; // Lead form only lives on join.html
+
   const thankYou = document.getElementById("thankYou");
   const thankYouName = document.getElementById("thankYouName");
   const goalSelect = document.getElementById("financialGoal");

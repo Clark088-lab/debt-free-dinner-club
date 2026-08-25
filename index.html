@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Debt Free Dinner Club — Your Seat at the Debt-Free Table</title>
-  <meta name="description" content="Debt Free Dinner Club helps everyday people build a real plan to become debt free — with community, support, and no judgment. Get started free." />
+  <title>Debt Free Dinner Club — Where Women Get Out of Debt Together</title>
+  <meta name="description" content="Debt Free Dinner Club is a community and free directory helping women build a real plan to pay off debt — with support, honest conversations, and no judgment." />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍽️</text></svg>" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,11 +16,20 @@
   <!-- ============ HEADER ============ -->
   <header class="site-header">
     <div class="container header-inner">
-      <a href="#top" class="brand">
+      <a href="index.html" class="brand">
         <span class="brand-mark">🍽️</span>
         <span class="brand-name">Debt Free Dinner Club</span>
       </a>
-      <a href="#lead-form" class="btn btn-primary btn-header">Get Started</a>
+      <nav class="site-nav" id="siteNav">
+        <a href="index.html" class="nav-link is-active">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="guide.html" class="nav-link">Get Out of Debt</a>
+        <a href="resources.html" class="nav-link">Directory</a>
+        <a href="join.html" class="btn btn-primary btn-header">Join the Club</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="siteNav">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </header>
 
@@ -29,49 +38,52 @@
     <!-- ============ HERO ============ -->
     <section class="hero">
       <div class="container hero-inner">
-        <p class="eyebrow">A community for people ready to quit debt for good</p>
+        <p class="eyebrow">A community of women choosing freedom over debt</p>
         <h1>Pull Up a Chair. Leave Your Debt Behind.</h1>
         <p class="hero-sub">
-          Debt Free Dinner Club helps everyday people build a clear, realistic plan to
-          pay off debt — backed by real support, real conversations, and people who
-          understand exactly what you're going through.
+          Debt Free Dinner Club is where women gather — around real tables and inside a
+          real community — to build a clear, honest plan to pay off debt. No shame, no
+          lectures, no financial jargon. Just women who get it, and a plan that actually
+          works for your life.
         </p>
         <div class="hero-actions">
-          <a href="#lead-form" class="btn btn-primary btn-large">Get Started — It's Free</a>
-          <a href="#benefits" class="btn btn-ghost">See How It Works</a>
+          <a href="join.html" class="btn btn-primary btn-large">Join the Club — It's Free</a>
+          <a href="guide.html" class="btn btn-ghost">Read the Free Guide</a>
         </div>
         <p class="hero-note">No cost to join. No judgment. Just a plan that works.</p>
       </div>
     </section>
 
-    <!-- ============ ABOUT ============ -->
+    <!-- ============ ABOUT TEASER ============ -->
     <section class="about">
       <div class="container about-inner">
         <h2>What Is Debt Free Dinner Club?</h2>
         <p>
-          Think of it as pulling up a seat at a table full of people who are all working
-          toward the same goal: freedom from debt. We combine simple, judgment-free
-          money coaching with a warm, supportive community — so you're never figuring
-          it out alone. No shame, no lectures, no jargon. Just honest conversations and
-          a step-by-step plan built around your real life.
+          Think of it as pulling up a seat at a table full of women who are all working
+          toward the same goal: freedom from debt. We pair simple, judgment-free money
+          coaching with a warm, supportive community of women — so you're never figuring
+          it out alone. No shame, no lectures, no jargon. Just honest conversations and a
+          step-by-step plan built around your real life, your real income, and your real
+          goals.
         </p>
+        <a href="about.html" class="btn btn-ghost" style="border-color: var(--gold-light); color: var(--gold-light);">Read Our Story</a>
       </div>
     </section>
 
     <!-- ============ BENEFITS ============ -->
     <section class="benefits" id="benefits">
       <div class="container">
-        <h2 class="section-title">Why People Choose Us</h2>
+        <h2 class="section-title">Why Women Choose Us</h2>
         <div class="benefit-grid">
           <div class="benefit-card">
             <div class="benefit-icon">🗺️</div>
-            <h3>A Personalized Plan</h3>
-            <p>Get a clear, realistic path out of debt built around your income, your bills, and your goals — not a generic worksheet.</p>
+            <h3>A Plan for Your Real Life</h3>
+            <p>Get a clear, realistic path out of debt built around your income, your bills, and your goals — not a generic worksheet or a lecture from someone who's never lived on one income.</p>
           </div>
           <div class="benefit-card">
             <div class="benefit-icon">🤝</div>
-            <h3>Real Community Support</h3>
-            <p>Connect with others who are working toward the same goal. You'll never feel alone or judged for where you're starting from.</p>
+            <h3>A Table Full of Women Who Get It</h3>
+            <p>Connect with other women working toward the same goal. No judgment about how you got here — only support for where you're headed.</p>
           </div>
           <div class="benefit-card">
             <div class="benefit-icon">💡</div>
@@ -100,100 +112,56 @@
           <div class="how-step">
             <span class="how-number">2</span>
             <h3>Get Your Invite</h3>
-            <p>We'll reach out personally to welcome you and walk you through the next steps.</p>
+            <p>We'll reach out personally to welcome you and point you toward the right resources and community.</p>
           </div>
           <div class="how-step">
             <span class="how-number">3</span>
             <h3>Start Your Plan</h3>
-            <p>Join the club, get your personalized plan, and start moving toward debt-free.</p>
+            <p>Join the club, use our free directory of tools and guides, and start moving toward debt-free.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ============ FINAL CTA / LEAD FORM ============ -->
-    <section class="cta-form" id="lead-form">
-      <div class="container form-wrap">
-        <div class="form-intro">
-          <h2>Ready to Get Your Seat at the Table?</h2>
-          <p>
-            Fill out the short form below and we'll personally reach out to help you take
-            the first step toward a debt-free life. It only takes a minute.
-          </p>
+    <!-- ============ FREEDOM SECTION ============ -->
+    <section class="section section-dark">
+      <div class="container">
+        <p class="breadcrumb-eyebrow" style="text-align:center;">The other side of debt</p>
+        <h2 class="section-title">What Debt-Free Actually Feels Like</h2>
+        <p class="section-lede" style="color: rgba(250,246,240,0.85);">
+          It's not just a number hitting zero. It's what opens up in your life once it does.
+        </p>
+        <div class="freedom-grid">
+          <div class="freedom-item">
+            <span class="freedom-icon">😴</span>
+            <p>Falling asleep without running numbers in your head.</p>
+          </div>
+          <div class="freedom-item">
+            <span class="freedom-icon">📬</span>
+            <p>Opening your mail — or your banking app — without a knot in your stomach.</p>
+          </div>
+          <div class="freedom-item">
+            <span class="freedom-icon">🙋‍♀️</span>
+            <p>Saying yes to a trip, a gift, or a leap — because your money finally works for you.</p>
+          </div>
+          <div class="freedom-item">
+            <span class="freedom-icon">🧾</span>
+            <p>Making decisions based on what you want, not on which bill is screaming loudest.</p>
+          </div>
         </div>
+      </div>
+    </section>
 
-        <!-- Lead Form -->
-        <form id="leadForm" class="lead-form" novalidate>
-          <div class="form-row">
-            <label for="firstName">First Name</label>
-            <input type="text" id="firstName" name="firstName" placeholder="Jamie" required autocomplete="given-name" />
-            <span class="error-msg" data-error-for="firstName"></span>
+    <!-- ============ DIRECTORY TEASER ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-banner">
+          <h2>Not Ready to Join Yet? Start Free.</h2>
+          <p>Read our step-by-step guide to paying off debt, or browse our free directory of hand-picked videos, tools, and nonprofit resources.</p>
+          <div class="cta-banner-actions">
+            <a href="guide.html" class="btn btn-primary btn-large">Read the Guide</a>
+            <a href="resources.html" class="btn btn-ghost" style="border-color: var(--cream); color: var(--cream);">Browse the Directory</a>
           </div>
-
-          <div class="form-row">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email" />
-            <span class="error-msg" data-error-for="email"></span>
-          </div>
-
-          <div class="form-row">
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567" required autocomplete="tel" />
-            <span class="error-msg" data-error-for="phone"></span>
-          </div>
-
-          <div class="form-row">
-            <label for="debtAmount">Approximate Amount of Debt</label>
-            <select id="debtAmount" name="debtAmount" required>
-              <option value="" disabled selected>Select a range</option>
-              <option value="Under $5,000">Under $5,000</option>
-              <option value="$5,000 - $15,000">$5,000 - $15,000</option>
-              <option value="$15,000 - $30,000">$15,000 - $30,000</option>
-              <option value="$30,000 - $50,000">$30,000 - $50,000</option>
-              <option value="$50,000 - $100,000">$50,000 - $100,000</option>
-              <option value="Over $100,000">Over $100,000</option>
-            </select>
-            <span class="error-msg" data-error-for="debtAmount"></span>
-          </div>
-
-          <div class="form-row form-row-wide">
-            <label for="financialGoal">Biggest Financial Goal</label>
-            <select id="financialGoal" name="financialGoal" required>
-              <option value="" disabled selected>Select your top goal</option>
-              <option value="Pay off credit card debt">Pay off credit card debt</option>
-              <option value="Pay off student loans">Pay off student loans</option>
-              <option value="Build an emergency savings fund">Build an emergency savings fund</option>
-              <option value="Buy a home">Buy a home</option>
-              <option value="Improve my credit score">Improve my credit score</option>
-              <option value="Retire comfortably">Retire comfortably</option>
-              <option value="Other">Other (tell us below)</option>
-            </select>
-            <span class="error-msg" data-error-for="financialGoal"></span>
-          </div>
-
-          <div class="form-row form-row-wide" id="otherGoalRow" hidden>
-            <label for="financialGoalOther">Tell Us More About Your Goal</label>
-            <input type="text" id="financialGoalOther" name="financialGoalOther" placeholder="e.g. Pay off my car loan" />
-          </div>
-
-          <div class="form-row form-row-wide">
-            <button type="submit" class="btn btn-primary btn-large btn-submit">
-              <span class="btn-text">Get Started</span>
-            </button>
-            <p class="form-privacy">We respect your privacy. Your information is never sold and is only used to contact you about Debt Free Dinner Club.</p>
-          </div>
-        </form>
-
-        <!-- Thank you confirmation -->
-        <div id="thankYou" class="thank-you" hidden>
-          <div class="thank-you-icon">🎉</div>
-          <h2>You're In! Welcome to the Table.</h2>
-          <p>
-            Thanks for taking the first step, <span id="thankYouName">friend</span>! We've
-            received your information and someone from Debt Free Dinner Club will reach
-            out personally very soon.
-          </p>
-          <p class="thank-you-sub">Keep an eye on your email and phone — your seat is saved.</p>
         </div>
       </div>
     </section>
@@ -203,7 +171,15 @@
   <!-- ============ FOOTER ============ -->
   <footer class="site-footer">
     <div class="container footer-inner">
+      <div class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="guide.html">Get Out of Debt</a>
+        <a href="resources.html">Directory</a>
+        <a href="join.html">Join the Club</a>
+      </div>
       <p>&copy; <span id="year"></span> Debt Free Dinner Club. All rights reserved.</p>
+      <p class="footer-disclaimer">Debt Free Dinner Club provides education and peer community support. We are not a law firm, credit repair company, debt settlement company, or lender, and nothing here is individualized legal, tax, or investment advice. Videos and organizations linked from our directory are provided for education; we don't control their content and don't earn referral fees from them.</p>
     </div>
   </footer>
 
