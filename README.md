@@ -28,6 +28,8 @@ hidden costs required to get this live.
 - `assets/script.js` — makes the site work: the mobile menu, the footer
   year, and the lead form on `join.html` (checks for mistakes, shows the
   thank-you message, and sends leads to you)
+- `vercel.json` — tells Vercel this is a plain static site with clean URLs
+  (e.g. `/about` instead of `/about.html`), so deployment needs zero setup
 
 All five pages share the same header navigation and footer, so visitors can
 move between them easily, and every page links back to `join.html` when
@@ -76,28 +78,32 @@ submissions arrive normally.
 
 ---
 
-## Step 2: Put the website online for free (10 minutes)
+## Step 2: Put the website online for free with Vercel (5 minutes)
 
-You can host this page for free using **GitHub Pages**, since your code
-already lives on GitHub.
+This project is set up to deploy on **Vercel** — a free hosting service
+that works great with plain HTML sites like this one. There's a
+`vercel.json` file already included, so Vercel needs zero configuration.
 
-1. On GitHub, open this repository in your browser.
-2. Click the **"Settings"** tab (near the top of the repository page).
-3. In the left-hand menu, click **"Pages"**.
-4. Under **"Build and deployment"**, set the **Source** to
-   **"Deploy from a branch"**.
-5. Under **Branch**, choose the branch this website was built on
-   (`claude/debt-free-dinner-directory-o5wz88`, or `main` if you've merged
-   it there) and select the folder **"/ (root)"**. Click **Save**.
-6. Wait a minute or two, then refresh the page. GitHub will show you a
-   web address like:
-   `https://yourusername.github.io/debt-free-dinner-club/`
+1. Go to **vercel.com** and click **"Sign Up"**. Choose **"Continue with
+   GitHub"** and log in with the GitHub account that owns this repository.
+2. Once you're in your Vercel dashboard, click **"Add New..." → "Project"**.
+3. Find and **"Import"** this repository (`debt-free-dinner-club`) from
+   the list. If you don't see it, click "Adjust GitHub App Permissions"
+   and grant Vercel access to it.
+4. Vercel will detect it as a static site automatically — you don't need
+   to change the Framework Preset, Build Command, or Output Directory.
+   Just click **"Deploy"**.
+5. In about 30–60 seconds, Vercel will give you a live web address like:
+   `https://debt-free-dinner-club.vercel.app`
    That's your live website! You can share that link anywhere — social
    media, email, text messages, ads, etc.
+6. From now on, every time you push changes to the `main` branch on
+   GitHub, Vercel automatically redeploys the live site for you — no
+   extra steps needed.
 
-**Note:** If you'd rather use a service like Netlify or Vercel instead of
-GitHub Pages, that also works and is also free — just point it at this
-repository. GitHub Pages is simplest since your code is already here.
+**Note:** GitHub Pages and Netlify also work fine as free alternatives if
+you'd rather use one of those instead — just point either one at this
+repository.
 
 ---
 
