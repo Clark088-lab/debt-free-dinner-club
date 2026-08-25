@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Join the Club — Debt Free Dinner Club</title>
+  <meta name="description" content="Join Debt Free Dinner Club for free — a community and personalized plan to help you pay off debt, judgment-free." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍽️</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">🍽️</span>
+        <span class="brand-name">Debt Free Dinner Club</span>
+      </a>
+      <nav class="site-nav" id="siteNav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="guide.html" class="nav-link">Get Out of Debt</a>
+        <a href="resources.html" class="nav-link">Directory</a>
+        <a href="join.html" class="btn btn-primary btn-header">Join the Club</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="siteNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="container page-hero-inner">
+        <p class="breadcrumb-eyebrow">Get Started</p>
+        <h1>Ready to Get Your Seat at the Table?</h1>
+        <p class="page-hero-sub">
+          Fill out the short form below and we'll personally reach out to help you take the
+          first step toward a debt-free life. It only takes a minute, and it's always free.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="lead-form">
+      <div class="container">
+        <div class="join-layout">
+
+          <div>
+            <!-- Lead Form -->
+            <form id="leadForm" class="lead-form" novalidate>
+              <div class="form-row">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Jamie" required autocomplete="given-name" />
+                <span class="error-msg" data-error-for="firstName"></span>
+              </div>
+
+              <div class="form-row">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email" />
+                <span class="error-msg" data-error-for="email"></span>
+              </div>
+
+              <div class="form-row">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567" required autocomplete="tel" />
+                <span class="error-msg" data-error-for="phone"></span>
+              </div>
+
+              <div class="form-row">
+                <label for="debtAmount">Approximate Amount of Debt</label>
+                <select id="debtAmount" name="debtAmount" required>
+                  <option value="" disabled selected>Select a range</option>
+                  <option value="Under $5,000">Under $5,000</option>
+                  <option value="$5,000 - $15,000">$5,000 - $15,000</option>
+                  <option value="$15,000 - $30,000">$15,000 - $30,000</option>
+                  <option value="$30,000 - $50,000">$30,000 - $50,000</option>
+                  <option value="$50,000 - $100,000">$50,000 - $100,000</option>
+                  <option value="Over $100,000">Over $100,000</option>
+                </select>
+                <span class="error-msg" data-error-for="debtAmount"></span>
+              </div>
+
+              <div class="form-row form-row-wide">
+                <label for="financialGoal">Biggest Financial Goal</label>
+                <select id="financialGoal" name="financialGoal" required>
+                  <option value="" disabled selected>Select your top goal</option>
+                  <option value="Pay off credit card debt">Pay off credit card debt</option>
+                  <option value="Pay off student loans">Pay off student loans</option>
+                  <option value="Build an emergency savings fund">Build an emergency savings fund</option>
+                  <option value="Buy a home">Buy a home</option>
+                  <option value="Improve my credit score">Improve my credit score</option>
+                  <option value="Retire comfortably">Retire comfortably</option>
+                  <option value="Other">Other (tell us below)</option>
+                </select>
+                <span class="error-msg" data-error-for="financialGoal"></span>
+              </div>
+
+              <div class="form-row form-row-wide" id="otherGoalRow" hidden>
+                <label for="financialGoalOther">Tell Us More About Your Goal</label>
+                <input type="text" id="financialGoalOther" name="financialGoalOther" placeholder="e.g. Pay off my car loan" />
+              </div>
+
+              <div class="form-row form-row-wide">
+                <button type="submit" class="btn btn-primary btn-large btn-submit">
+                  <span class="btn-text">Get Started</span>
+                </button>
+                <p class="form-privacy">We respect your privacy. Your information is never sold and is only used to contact you about Debt Free Dinner Club.</p>
+              </div>
+            </form>
+
+            <!-- Thank you confirmation -->
+            <div id="thankYou" class="thank-you" hidden>
+              <div class="thank-you-icon">🎉</div>
+              <h2>You're In! Welcome to the Table.</h2>
+              <p>
+                Thanks for taking the first step, <span id="thankYouName">friend</span>! We've
+                received your information and someone from Debt Free Dinner Club will reach
+                out personally very soon.
+              </p>
+              <p class="thank-you-sub">Keep an eye on your email and phone — your seat is saved.</p>
+            </div>
+          </div>
+
+          <aside class="join-side">
+            <h3>What Happens Next</h3>
+            <ul>
+              <li>We'll reach out personally within a few days to welcome you.</li>
+              <li>You'll get pointed toward the community and resources that fit your situation.</li>
+              <li>No sales pitch, no pressure — and no cost, ever.</li>
+            </ul>
+            <h3>Not Ready to Share Your Info?</h3>
+            <ul>
+              <li><a href="guide.html">Read the free step-by-step guide</a> first.</li>
+              <li><a href="resources.html">Browse the directory</a> of videos and tools — no sign-up required.</li>
+            </ul>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="guide.html">Get Out of Debt</a>
+        <a href="resources.html">Directory</a>
+        <a href="join.html">Join the Club</a>
+      </div>
+      <p>&copy; <span id="year"></span> Debt Free Dinner Club. All rights reserved.</p>
+      <p class="footer-disclaimer">Debt Free Dinner Club provides education and peer community support. We are not a law firm, credit repair company, debt settlement company, or lender, and nothing here is individualized legal, tax, or investment advice. Videos and organizations linked from our directory are provided for education; we don't control their content and don't earn referral fees from them.</p>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
